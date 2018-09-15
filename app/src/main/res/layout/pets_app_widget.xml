@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/widget_LinearLayout_view"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:text="@string/app_name"
+            android:textSize="@dimen/abc_text_size_title_material_toolbar"
+            android:textColor="@color/night_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/widget_insert_dummy"
+            android:src="@drawable/ic_add_24dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="@dimen/abc_action_button_min_width_material"
+            android:layout_height="@dimen/abc_action_button_min_height_material"  />
+        <ImageButton
+            android:id="@+id/widget_Delete_all_pets"
+            android:src="@drawable/ic_delete_24dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="@dimen/abc_action_button_min_width_material"
+            android:layout_height="@dimen/abc_action_button_min_height_material"  />
+        <ImageButton
+            android:id="@+id/widget_setting"
+            android:src="@drawable/ic_settings_24dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="@dimen/abc_action_button_min_width_material"
+            android:layout_height="@dimen/abc_action_button_min_height_material"  />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/widget_main_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/light_background" />
+
+        <LinearLayout
+            android:id="@+id/widget_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_background"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/empty_shelter_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/dog_house"/>
+
+            <TextView
+                android:id="@+id/empty_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:textSize="12sp"
+                android:textColor="@color/light_hint"
+                android:text="@string/empty_view_title_text" />
+
+            <TextView
+                android:id="@+id/empty_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/light_hint"
+                android:text="@string/empty_view_subtitle_text" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
